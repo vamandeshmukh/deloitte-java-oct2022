@@ -7,6 +7,10 @@ public class BankCustomer {
 	String customerName; // non-static - unique for each object - access with object reference
 	double balance; // non-static - unique for each object - access with object reference
 
+	public BankCustomer() {
+
+	}
+
 	void deposit() {
 
 	}
