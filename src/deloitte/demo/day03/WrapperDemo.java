@@ -14,11 +14,14 @@ public class WrapperDemo {
 		// boolean - Boolean 
 
 //		int pin = 500001;
-		Integer pin = 500001;
+		Integer pin = 500001; // boxing , autoboxing 
+		int num = 500002;
+		Integer pin2 =  Integer.valueOf(num) ; // boxing, manual boxing  
 		String firstName = "Vaman";
+		
 
-//		pin.
-//		firstName.
+//		pin. // study these methods 
+//		Integer. // study these methods as well 
 
 	}
 
