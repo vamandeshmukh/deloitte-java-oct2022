@@ -8,7 +8,7 @@ public class BankCustomer {
 	double balance; // non-static - unique for each object - access with object reference
 
 	public BankCustomer() {
-
+		System.out.println("constrcutor called...");
 	}
 
 	void deposit() {
