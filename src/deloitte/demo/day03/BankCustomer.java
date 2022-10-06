@@ -23,4 +23,10 @@ public class BankCustomer {
 
 	}
 
+	@Override
+	public String toString() {
+		return "BankCustomer [accountNumber=" + accountNumber + ", customerName=" + customerName + ", balance="
+				+ balance + "]";
+	}
+
 }

@@ -32,6 +32,7 @@ public class MethodDemo {
 	static int getTenAndReturn(int num) { // With Arguments, with return value - NWWR
 		return num;
 	}
+
 //	static void hi(String userName) { // with arguments, without return value
 //	System.out.println("Hi " + userName + "!");
 //}
