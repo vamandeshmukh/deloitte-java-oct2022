@@ -8,10 +8,18 @@ public class BankCustomer {
 	double balance; // non-static - unique for each object - access with object reference
 
 	public BankCustomer() {
-		System.out.println("constrcutor called...");
+		System.out.println("default constructor called");
 	}
 
-	void deposit() {
+	public BankCustomer(int ac, String cn, double bl) {
+		System.out.println("parameterized constructor called");
+		accountNumber = ac;
+		customerName = cn;
+		balance = bl;
+
+	}
+
+	public void deposit() {
 
 	}
 

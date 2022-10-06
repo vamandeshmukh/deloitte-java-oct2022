@@ -5,10 +5,11 @@ package deloitte.demo.day03;
 // it does not have any return type 
 // is needed to create an object 
 // it's name is same as class name 
-//a class can have one or more constructors 
+// a class can have one or more constructors 
 // a no-args constructor is available by default 
 // we can also create our own constructors 
-// if we create our own constructor, the default constructor is not available 
+// if we create our own constructor - 
+// then the default constructor is not available 
 
 public class ConstructorDemo {
 
@@ -26,9 +27,11 @@ public class ConstructorDemo {
 		obj2.balance = 12.50;
 		System.out.println(obj2.toString());
 
-//		BankCustomer obj3 = new BankCustomer(12347, "Tonu". 20.75);
-//		System.out.println(obj3.toString());
+		BankCustomer obj3 = new BankCustomer(12347, "Tonu", 20.75);
+		System.out.println(obj3.toString());
 
+		BankCustomer obj4 = new BankCustomer(12348, "Gonu", 15.50);
+		System.out.println(obj4.toString());
 	}
 
 }
