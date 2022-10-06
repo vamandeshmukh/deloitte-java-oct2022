@@ -11,12 +11,17 @@ public class BankCustomer {
 		System.out.println("default constructor called");
 	}
 
-	public BankCustomer(int ac, String cn, double bl) {
-		System.out.println("parameterized constructor called");
-		accountNumber = ac;
-		customerName = cn;
-		balance = bl;
+	public BankCustomer(int accountNumber, String customerName) {
+		System.out.println("2 parameterized constructor called");
+		this.accountNumber = accountNumber;
+		this.customerName = customerName;
+	}
 
+	public BankCustomer(int accountNumber, String customerName, double balance) {
+		System.out.println("all parameterized constructor called");
+		this.accountNumber = accountNumber;
+		this.customerName = customerName;
+		this.balance = balance;
 	}
 
 	@Override

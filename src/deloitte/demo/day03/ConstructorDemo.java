@@ -32,6 +32,9 @@ public class ConstructorDemo {
 
 		BankCustomer obj4 = new BankCustomer(12348, "Gonu", 15.50);
 		System.out.println(obj4.toString());
+
+		BankCustomer obj5 = new BankCustomer(12348, "Ponu");
+		System.out.println(obj5.toString());
 	}
 
 }
