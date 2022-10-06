@@ -16,14 +16,6 @@ public class MethodDemo {
 
 	}
 
-//	static void hi(String userName) { // with arguments, without return value
-//		System.out.println("Hi " + userName + "!");
-//	}
-//
-//	static void hi2(String firstName, String lastName) { // with arguments, without return value
-//		System.out.println("Hi " + firstName + " " + lastName + "!");
-//	}
-
 	static void printTen() { // No Arguments, No Return value - NANR
 		System.out.println(10);
 	}
@@ -40,4 +32,12 @@ public class MethodDemo {
 	static int getTenAndReturn(int num) { // With Arguments, with return value - NWWR
 		return num;
 	}
+//	static void hi(String userName) { // with arguments, without return value
+//	System.out.println("Hi " + userName + "!");
+//}
+//
+//static void hi2(String firstName, String lastName) { // with arguments, without return value
+//	System.out.println("Hi " + firstName + " " + lastName + "!");
+//}
+
 }
