@@ -19,26 +19,25 @@ public class BankCustomer {
 
 	}
 
-	public void deposit() {
-
-	}
-
-	void withdraw() {
-
-	}
-
-	void transfer() {
-
-	}
-
-	void checkBalance() {
-
-	}
-
 	@Override
 	public String toString() {
 		return "BankCustomer [accountNumber=" + accountNumber + ", customerName=" + customerName + ", balance="
 				+ balance + "]";
 	}
 
+//	public void deposit() {
+//
+//	}
+//
+//	void withdraw() {
+//
+//	}
+//
+//	void transfer() {
+//
+//	}
+//
+//	void checkBalance() {
+//
+//	}
 }
