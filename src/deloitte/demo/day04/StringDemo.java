@@ -13,9 +13,15 @@ public class StringDemo {
 		
 		System.out.println(firstName);
 		System.out.println(lastName);
+		
+		String str = "abcdefghij";
+		
+		System.out.println(str.charAt(5));
+		System.out.println(str.charAt(9));
+		
+		System.out.println(str.length());
 
-//		for (String str : strArray)
-//			System.out.println(str);
+
 
 	}
 
