@@ -9,7 +9,7 @@ public class RandomDemo {
 		Random random = new Random();
 
 		for (int i = 1; i <= 10; i++) {
-			Integer num = random.nextInt();
+			Integer num = random.nextInt(100);
 			System.out.println(num);
 		}
 	}
