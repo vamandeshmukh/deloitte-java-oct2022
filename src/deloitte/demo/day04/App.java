@@ -2,10 +2,14 @@ package deloitte.demo.day04;
 
 public class App {
 
-	static String today;
+	static DayOfTheWeek today;
 
 	public static void main(String[] args) {
 
+		System.out.println(App.today);
+		
+		today = DayOfTheWeek.FRIDAY;
+		
 		System.out.println(App.today);
 
 	}
