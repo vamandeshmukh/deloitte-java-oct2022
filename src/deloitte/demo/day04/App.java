@@ -1,5 +1,9 @@
 package deloitte.demo.day04;
 
+enum Month {
+	JANUARY, FEBRUARY, MARCH
+}
+
 public class App {
 
 	static DayOfTheWeek today;
@@ -7,10 +11,16 @@ public class App {
 	public static void main(String[] args) {
 
 		System.out.println(App.today);
-		
+
 		today = DayOfTheWeek.FRIDAY;
-		
+
 		System.out.println(App.today);
+
+		today = DayOfTheWeek.MONDAY;
+
+		System.out.println(App.today);
+
+		System.out.println(Month.MARCH);
 
 	}
 
