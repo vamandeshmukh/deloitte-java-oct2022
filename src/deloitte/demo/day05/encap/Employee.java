@@ -1,5 +1,7 @@
 package deloitte.demo.day05.encap;
 
+import java.util.Objects;
+
 // POJO class 
 
 public class Employee {
@@ -41,6 +43,24 @@ public class Employee {
 
 	public void setSalary(double salary) {
 		this.salary = salary;
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(eid, firstName, salary);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Employee other = (Employee) obj;
+		return eid == other.eid && Objects.equals(firstName, other.firstName)
+				&& Double.doubleToLongBits(salary) == Double.doubleToLongBits(other.salary);
 	}
 
 	@Override
