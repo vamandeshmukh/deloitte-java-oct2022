@@ -19,7 +19,6 @@ package deloitte.demo.day05.abs;
 interface FinMin {
 
 	public abstract void paySalary();
-
 //	void paySalary();
 
 }
@@ -78,6 +77,7 @@ public class Bank {
 		obj2.paySalary();
 
 //		Rbi obj3 = new Rbi();
+//		FinMin obj4 = new FinMin();
 
 	}
 }
