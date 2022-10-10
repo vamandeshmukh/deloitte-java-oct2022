@@ -16,6 +16,14 @@ package deloitte.demo.day05.abs;
 //
 //}
 
+interface FinMin {
+
+	public abstract void paySalary();
+
+//	void paySalary();
+
+}
+
 abstract class Rbi { // abstract class
 
 	abstract void doKyc(); // abstract method
@@ -26,20 +34,30 @@ abstract class Rbi { // abstract class
 
 }
 
-class HdfcBank extends Rbi { // concrete class
+class HdfcBank extends Rbi implements FinMin { // concrete class
 
 	@Override
 	void doKyc() {
 		System.out.println("HDFC : Submit Aadhaar copy ");
 	}
 
+	@Override
+	public void paySalary() {
+		System.out.println("Paying salary every month");
+	}
+
 }
 
-class IciciBank extends Rbi {
+class IciciBank extends Rbi implements FinMin {
 
 	@Override
 	void doKyc() {
 		System.out.println("ICICI : Give thumb impression for Aadhaar");
+	}
+
+	@Override
+	public void paySalary() {
+		System.out.println("Paying salary every month");
 	}
 
 }
@@ -48,12 +66,18 @@ public class Bank {
 
 	public static void main(String[] args) {
 
+		System.out.println("HDFC");
 		HdfcBank obj = new HdfcBank();
 		obj.payInterest();
 		obj.doKyc();
+		obj.paySalary();
+		System.out.println("ICICI");
 		IciciBank obj2 = new IciciBank();
 		obj2.payInterest();
 		obj2.doKyc();
+		obj2.paySalary();
+
+//		Rbi obj3 = new Rbi();
 
 	}
 }
