@@ -14,8 +14,10 @@ public class LambdaDemo {
 //		};
 
 		SomeInterface obj2 = (arg) -> System.out.println("someMethod implemented " + arg);
-
 		obj2.someMethod(20);
+
+		FunInt obj3 = (i, j) -> System.out.println(i + j);
+		obj3.funMethod(10, 20);
 
 	}
 

@@ -9,6 +9,7 @@ public interface SomeInterface {
 
 }
 
+
 //public interface SomeInterface {
 //
 //	public abstract void someMethod(int arg);
