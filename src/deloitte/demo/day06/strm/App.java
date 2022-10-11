@@ -12,7 +12,7 @@ public class App {
 	public static void main(String[] args) {
 
 		List<Employee> empList = new ArrayList<>();
-
+ 
 		empList.add(new Employee(101, "Sonu", 90000));
 		empList.add(new Employee(104, "Monu", 95000));
 		empList.add(new Employee(102, "Tonu", 80000));
