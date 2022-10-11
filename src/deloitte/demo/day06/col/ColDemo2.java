@@ -2,23 +2,19 @@ package deloitte.demo.day06.col;
 
 import java.util.ArrayList;
 
-public class ColDemo {
+public class ColDemo2 {
 
 	public static void main(String[] args) {
-
-//		int[] arr = { 10, 20, 30 };
-
-//		List Map Set Queue 
 
 		ArrayList marksList = new ArrayList();
 
 		System.out.println(marksList.size());
 		System.out.println(marksList);
 		marksList.add(98);
-		marksList.add(95);
-		marksList.add(99);
-		marksList.add(97);
-		marksList.add(98);
+		marksList.add(95.75);
+		marksList.add("abc");
+		marksList.add('c');
+		marksList.add(false);
 		System.out.println(marksList.size());
 		System.out.println(marksList);
 		marksList.add(97);
