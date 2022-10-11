@@ -1,6 +1,6 @@
 package deloitte.demo.day06.lambda;
 
-@FunctionalInterface
+//@FunctionalInterface
 public interface SomeInterface {
 
 	public abstract void someMethod(int arg);
