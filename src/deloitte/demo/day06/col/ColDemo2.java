@@ -10,7 +10,7 @@ public class ColDemo2 {
 
 		System.out.println(marksList.size());
 		System.out.println(marksList);
-		marksList.add(98);
+		marksList.add(98); 
 		marksList.add(95.75);
 		marksList.add("abc");
 		marksList.add('c');

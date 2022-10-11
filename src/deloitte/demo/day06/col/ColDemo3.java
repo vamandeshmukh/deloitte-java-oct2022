@@ -13,7 +13,7 @@ public class ColDemo3 {
 		list.add(30);
 
 		ArrayList<Integer> list2 = new ArrayList<>();
-
+ 
 		list2.add(100);
 		list2.add(200);
 		list2.add(300);

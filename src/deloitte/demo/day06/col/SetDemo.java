@@ -9,7 +9,7 @@ public class SetDemo {
 
 		Set<Integer> mySet = new HashSet<>();
 //		HashSet<Integer> mySet = new HashSet<>();
-
+ 
 		mySet.add(10);
 		mySet.add(15);
 		mySet.add(20);

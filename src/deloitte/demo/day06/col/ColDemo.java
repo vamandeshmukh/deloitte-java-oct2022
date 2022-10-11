@@ -17,7 +17,7 @@ public class ColDemo {
 		marksList.add(98);
 		marksList.add(95);
 		marksList.add(99);
-		marksList.add(97);
+		marksList.add(97); 
 		marksList.add(98);
 		System.out.println(marksList.size());
 		System.out.println(marksList);

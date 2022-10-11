@@ -9,7 +9,7 @@ public class GenericDemo {
 		ArrayList<Integer> marksList = new ArrayList<>();
 
 		System.out.println(marksList.size());
-		System.out.println(marksList);
+		System.out.println(marksList); 
 		marksList.add(98);
 		marksList.add(95);
 //		marksList.add("abc");

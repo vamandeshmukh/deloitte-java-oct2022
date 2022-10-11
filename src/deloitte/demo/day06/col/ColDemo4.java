@@ -16,7 +16,7 @@ public class ColDemo4 {
 		list.add(50);
 
 		Iterator<Integer> it = list.iterator();
-
+ 
 		while (it.hasNext())
 			System.out.println(it.next());
 

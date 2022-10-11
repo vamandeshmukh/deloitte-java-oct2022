@@ -11,7 +11,7 @@ public class MapDemo {
 
 		myMap.put(10, "Telangana");
 		myMap.put(20, "Maharashtra");
-		myMap.put(30, "Andhra Pradesh");
+		myMap.put(30, "Andhra Pradesh"); 
 		myMap.put(40, "Gujrat");
 
 		System.out.println(myMap.get(20));
