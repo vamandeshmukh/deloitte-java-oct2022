@@ -78,6 +78,14 @@ DROP TABLE emp;
 
 -- JOINS 
 
+-- In which city does eid 101 work?
+
+
+
+
+
+
+
 -- SELECT 'All are back?';
 
 
