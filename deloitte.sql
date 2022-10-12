@@ -56,7 +56,7 @@ INSERT INTO dept (did, dname, city) VALUES (20, 'Admin', 'Chennai');
 INSERT INTO dept (did, dname, city) VALUES (30, 'Sales', 'Bengaluru');
 INSERT INTO dept (did, dname, city) VALUES (40, 'Accounts', 'Pune');
 
-CREATE TABLE EMP (eid INT PRIMARY KEY, first_name VARCHAR(50), salary DECIMAL, did INT REFERENCES dept(did));
+CREATE TABLE EMP (eid INT PRIMARY KEY, first_name VARCHAR(50), salary DECIMAL, did INT, FOREIGN KEY (did) REFERENCES dept(did));
 
 INSERT INTO emp (eid, first_name, salary, did) VALUES (101, 'Sonu', 90000, 10);
 INSERT INTO emp (eid, first_name, salary, did) VALUES (102, 'Monu', 95000, 20);
@@ -69,3 +69,12 @@ SELECT * FROM emp;
 
 -- error 
 INSERT INTO emp (eid, first_name, salary, did) VALUES (106, 'Sona', 99000, 50);
+
+Set foreign_key_checks = 1;
+select @@foreign_key_checks;
+
+DROP TABLE dept;
+DROP TABLE emp;
+
+
+
