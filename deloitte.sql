@@ -76,11 +76,24 @@ select @@foreign_key_checks;
 DROP TABLE dept;
 DROP TABLE emp;
 
+SELECT * FROM dept;
+SELECT * FROM emp;
+
 -- JOINS 
 
 -- In which city does eid 101 work?
 
+SELECT * FROM emp
+JOIN dept 
+ON emp.did = dept.did 
+WHERE emp.eid = 101;
 
+-- with proper syntax 
+SELECT e.eid, e.first_name, e.did, d.city 
+FROM emp e
+JOIN dept d 
+ON e.did = d.did 
+WHERE e.eid = 101;
 
 
 
