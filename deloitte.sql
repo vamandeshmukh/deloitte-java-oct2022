@@ -35,3 +35,5 @@ UPDATE emp_table SET salary = 86000 WHERE eid = 103;
 
 SELECT * FROM emp_table;
 
+
+
