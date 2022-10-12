@@ -46,3 +46,4 @@ INSERT INTO emp2 (eid, first_name, salary) VALUES (102, 'Monu', 95000);
 INSERT INTO emp2 (eid, first_name, salary) VALUES (102, 'Monu', 95000);
 
 SELECT * FROM emp2;
+
