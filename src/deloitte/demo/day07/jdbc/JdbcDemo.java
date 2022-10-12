@@ -16,7 +16,7 @@ public class JdbcDemo {
 
 		System.out.println("Start");
 
-		String url = "jdbc:mysql://localhost:3306/deloitte";
+		String url = "jdbc:mysql://localhost:3306/deloitte_oct22";
 		String user = "root";
 		String password = "root";
 		String sql = "SELECT * FROM emp WHERE eid = 101";
@@ -26,15 +26,16 @@ public class JdbcDemo {
 		ResultSet rs = null;
 
 		try {
-			System.out.println(con);
-			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/deloitte", "root", "root");
-			System.out.println(con);
+			con = DriverManager.getConnection(url, user, password);
 			st = con.createStatement();
 			rs = st.executeQuery(sql);
-			System.out.println(rs.getInt(1));
-			System.out.println(rs.getString(2));
-			System.out.println(rs.getDouble(3));
-			System.out.println(rs.getInt(4));
+
+			while (rs.next()) {
+				System.out.println(rs.getInt(1));
+				System.out.println(rs.getString(2));
+				System.out.println(rs.getDouble(3));
+				System.out.println(rs.getInt(4));
+			}
 
 		} catch (SQLException e) {
 			e.printStackTrace();
