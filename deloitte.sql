@@ -47,3 +47,25 @@ INSERT INTO emp2 (eid, first_name, salary) VALUES (102, 'Monu', 95000);
 
 SELECT * FROM emp2;
 
+-- foreign key 
+
+CREATE TABLE DEPT (did INT PRIMARY KEY, dname VARCHAR(50), city VARCHAR(50));
+
+INSERT INTO dept (did, dname, city) VALUES (10, 'HR', 'Hyderabad');
+INSERT INTO dept (did, dname, city) VALUES (20, 'Admin', 'Chennai');
+INSERT INTO dept (did, dname, city) VALUES (30, 'Sales', 'Bengaluru');
+INSERT INTO dept (did, dname, city) VALUES (40, 'Accounts', 'Pune');
+
+CREATE TABLE EMP (eid INT PRIMARY KEY, first_name VARCHAR(50), salary DECIMAL, did INT REFERENCES dept(did));
+
+INSERT INTO emp (eid, first_name, salary, did) VALUES (101, 'Sonu', 90000, 10);
+INSERT INTO emp (eid, first_name, salary, did) VALUES (102, 'Monu', 95000, 20);
+INSERT INTO emp (eid, first_name, salary, did) VALUES (103, 'Tonu', 80000, 20);
+INSERT INTO emp (eid, first_name, salary, did) VALUES (104, 'Ponu', 85000, 30);
+INSERT INTO emp (eid, first_name, salary, did) VALUES (105, 'Gonu', 99000, null);
+
+SELECT * FROM dept;
+SELECT * FROM emp;
+
+-- error 
+INSERT INTO emp (eid, first_name, salary, did) VALUES (106, 'Sona', 99000, 50);
