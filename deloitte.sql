@@ -76,5 +76,9 @@ select @@foreign_key_checks;
 DROP TABLE dept;
 DROP TABLE emp;
 
+-- JOINS 
+
+-- SELECT 'All are back?';
+
 
 
