@@ -31,5 +31,6 @@ SELECT * FROM emp_table WHERE salary > 90000 ORDER BY salary;
 
 SELECT first_name FROM emp_table ORDER BY first_name; 
 
+UPDATE emp_table SET salary = 86000 WHERE eid = 103;
 
 
