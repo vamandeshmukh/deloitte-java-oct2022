@@ -13,10 +13,10 @@ import java.sql.Statement;
 public class JdbcDemo {
 
 	public static void main(String[] args) {
-		
+
 		System.out.println("Start");
 
-		String url = "jdbc:mysql://localhost:3306/deloitte_oct22";
+		String url = "jdbc:mysql://localhost:3306/deloitte";
 		String user = "root";
 		String password = "root";
 		String sql = "SELECT * FROM emp WHERE eid = 101";
@@ -26,7 +26,8 @@ public class JdbcDemo {
 		ResultSet rs = null;
 
 		try {
-			con = DriverManager.getConnection(url, user, password);
+			System.out.println(con);
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/deloitte", "root", "root");
 			System.out.println(con);
 			st = con.createStatement();
 			rs = st.executeQuery(sql);
@@ -36,6 +37,7 @@ public class JdbcDemo {
 			System.out.println(rs.getInt(4));
 
 		} catch (SQLException e) {
+			e.printStackTrace();
 			System.out.println("Something is wrong!");
 		}
 		System.out.println("End");
