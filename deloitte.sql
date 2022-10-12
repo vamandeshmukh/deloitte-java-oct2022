@@ -17,9 +17,13 @@ select current_date();
 
 CREATE TABLE emp_table (eid INT, first_name VARCHAR(10), salary DECIMAL);
 
-SELECT * FROM emp_table;
+SELECT * FROM emp_table; 
 
 INSERT INTO emp_table (eid, first_name, salary) VALUES (101, 'Sonu', 90000);
+INSERT INTO emp_table (eid, first_name, salary) VALUES (102, 'Monu', 95000);
+INSERT INTO emp_table (eid, first_name, salary) VALUES (103, 'Tonu', 85000);
+INSERT INTO emp_table (eid, first_name, salary) VALUES (104, 'Ponu', 80000);
+INSERT INTO emp_table (eid, first_name, salary) VALUES (105, 'Gonu', 99000);
 
 
 
