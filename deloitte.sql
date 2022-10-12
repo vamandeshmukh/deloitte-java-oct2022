@@ -33,4 +33,5 @@ SELECT first_name FROM emp_table ORDER BY first_name;
 
 UPDATE emp_table SET salary = 86000 WHERE eid = 103;
 
+SELECT * FROM emp_table;
 
