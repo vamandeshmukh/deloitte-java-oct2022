@@ -25,5 +25,6 @@ INSERT INTO emp_table (eid, first_name, salary) VALUES (103, 'Tonu', 85000);
 INSERT INTO emp_table (eid, first_name, salary) VALUES (104, 'Ponu', 80000);
 INSERT INTO emp_table (eid, first_name, salary) VALUES (105, 'Gonu', 99000);
 
+SELECT * FROM emp_table ORDER BY first_name; 
 
 
