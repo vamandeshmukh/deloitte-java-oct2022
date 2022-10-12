@@ -27,4 +27,9 @@ INSERT INTO emp_table (eid, first_name, salary) VALUES (105, 'Gonu', 99000);
 
 SELECT * FROM emp_table ORDER BY first_name; 
 
+SELECT * FROM emp_table WHERE salary > 90000 ORDER BY salary; 
+
+SELECT first_name FROM emp_table ORDER BY first_name; 
+
+
 
