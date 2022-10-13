@@ -19,7 +19,7 @@ public class JdbcDemo {
 		String url = "jdbc:mysql://localhost:3306/deloitte_oct22";
 		String user = "root";
 		String password = "root";
-		String sql = "SELECT * FROM emp WHERE eid = 101";
+		String sql = "SELECT * FROM emp2 WHERE eid = 101";
 
 		Connection con = null;
 		Statement st = null;
@@ -31,10 +31,11 @@ public class JdbcDemo {
 			rs = st.executeQuery(sql);
 
 			while (rs.next()) {
+				Employee emp = new Employee(rs.getInt(1), rs.getString(2), rs.getDouble(3));
 				System.out.println(rs.getInt(1));
 				System.out.println(rs.getString(2));
 				System.out.println(rs.getDouble(3));
-				System.out.println(rs.getInt(4));
+				System.out.println(emp.toString());
 			}
 
 		} catch (SQLException e) {
